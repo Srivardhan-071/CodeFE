@@ -1,6 +1,6 @@
 import './App.css';
 import Body from './components/Body';
-import Editor from './components/Editor';
+import IDE from './components/IDE';
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
 import { Routes, Route } from 'react-router-dom';
@@ -13,7 +13,7 @@ function App() {
         <Sidebar />
         <Routes>
           <Route path='/' element={<Body />} />
-          <Route path='/editor' element={<Editor />} />
+          <Route path='/IDE' element={<IDE />} />
         </Routes>
       </div>
     </>

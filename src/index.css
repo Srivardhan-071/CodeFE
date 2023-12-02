@@ -16,3 +16,16 @@
   --bg-color-300: #2A86FF;
   --logo-color: #ffdf00;
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--bg-color-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--logo-color);
+  border-radius: 50px;
+}
