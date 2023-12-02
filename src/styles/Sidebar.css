@@ -1,0 +1,11 @@
+.sidebar {
+    height: calc(100vh - 58px);
+    padding: 20px 10px;
+    list-style: none;
+    background-color: var(--bg-color-100);
+}
+
+li {
+    font-size: 15px;
+    padding: 10px 10px;
+}
