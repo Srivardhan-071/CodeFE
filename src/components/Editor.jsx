@@ -11,15 +11,19 @@ export default function Editor(props) {
     const {
         language,
         onChange,
-        displayName
+        displayName,
+        width,
+        height,
+        codes
     } = props
+
     return (
         <>
             <h4 className="mode-name">{displayName}</h4>
             <AceEditor
                 className="ace-editor"
-                height="300px"
-                width="400px"
+                height={height}
+                width={width}
                 setOptions={{
                     useWorker: false
                 }}
@@ -27,7 +31,7 @@ export default function Editor(props) {
                 theme="dracula"
                 onChange={onChange}
                 name="UNIQUE_ID_OF_DIV"
-                defaultValue={null}
+                defaultValue={codes ? "<div></div>\n<style>\n\tdiv {\n\t\twidth: 100px;\n\t\theight: 100px;\n\t\tbackground: #17181a;\n\t}\n</style>" : ""}
                 fontSize="15px"
                 editorProps={{ $blockScrolling: true }}
             />

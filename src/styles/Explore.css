@@ -1,0 +1,20 @@
+.explore {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 0;
+    padding: 10px;
+    background-color: var(--bg-color-200);
+}
+
+.challange-container {
+    padding: 10px;
+    border: 2px solid var(--border-color);
+    width: fit-content;
+    border-radius: 10px;
+}
+
+.challange-image {
+    border-radius: 5px;
+    width: 350px;
+    height: 250px;
+}

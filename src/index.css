@@ -11,21 +11,27 @@
 
 :root {
   --font-color-100: #eff5fb;
+  --font-color-200: #eff5fb;
   --bg-color-100: #111315;
   --bg-color-200: #202225;
   --bg-color-300: #2A86FF;
   --logo-color: #ffdf00;
-  --mode-color: #eff5fb
+  --h1-color: #ffdf00;
+  --mode-color: #eff5fb;
+  --text-color: #17181a;
+  --border-color: #333c47;
 }
 
 
 :root:has(.mode:checked) {
   --font-color-100: #17181a;
+  --font-color-200: #eff5fb;
   --bg-color-100: #F9F7F7;
   --bg-color-200: #DBE2EF;
   --bg-color-300: #112D4E;
-  --logo-color: #ffdf00;
+  --h1-color: #112D4E;
   --mode-color: #17181a;
+  --text-color: #17181a;
 }
 
 ::-webkit-scrollbar {
@@ -39,4 +45,9 @@
 ::-webkit-scrollbar-thumb {
   background-color: var(--logo-color);
   border-radius: 50px;
+}
+
+::selection {
+  color: var(--text-color);
+  background: var(--logo-color);
 }

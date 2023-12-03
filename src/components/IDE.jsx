@@ -28,16 +28,16 @@ export default function IDE() {
     return (
         <div className='ide'>
             <div className="editors">
-                <Editor language="html" onChange={onChangeHtml} displayName="HTML" />
-                <Editor language="css" onChange={onChangeCss} displayName="CSS" />
-                <Editor language="javascript" onChange={onChangeJS} displayName="JS" />
+                <Editor language="html" onChange={onChangeHtml} displayName="HTML" height="300px" width="400px" />
+                <Editor language="css" onChange={onChangeCss} displayName="CSS" height="300px" width="400px" />
+                <Editor language="javascript" onChange={onChangeJS} displayName="JS" height="300px" width="400px" />
             </div>
 
             <iframe
                 className='frame'
                 srcDoc={srcDoc}
                 title="code"
-                frameborder="0"
+                frameBorder="0"
             />
         </div>
     )
