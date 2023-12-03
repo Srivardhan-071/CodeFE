@@ -20,7 +20,7 @@ export default function ChallangeEditor() {
     return (
         <div className='ChallangeEditor'>
             <div>
-                <Editor language="html" onChange={onChangeCode} displayName="Code Here" width="800px" height="95%" codes={true} />
+                <Editor language="html" onChange={onChangeCode} displayName="Code Here" width="600px" height="95%" codes={true} />
             </div>
             <div className="images">
                 <iframe
