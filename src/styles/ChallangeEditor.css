@@ -1,6 +1,6 @@
 .ChallangeEditor {
     display: flex;
-    gap: 80px;
+    gap: 2%;
     padding: 10px;
     background-color: var(--bg-color-200);
 }
