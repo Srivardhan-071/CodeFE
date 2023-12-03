@@ -15,6 +15,17 @@
   --bg-color-200: #202225;
   --bg-color-300: #2A86FF;
   --logo-color: #ffdf00;
+  --mode-color: #eff5fb
+}
+
+
+:root:has(.mode:checked) {
+  --font-color-100: #17181a;
+  --bg-color-100: #F9F7F7;
+  --bg-color-200: #DBE2EF;
+  --bg-color-300: #112D4E;
+  --logo-color: #ffdf00;
+  --mode-color: #17181a;
 }
 
 ::-webkit-scrollbar {

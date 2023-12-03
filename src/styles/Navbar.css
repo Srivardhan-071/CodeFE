@@ -23,3 +23,12 @@
     letter-spacing: 1px;
     text-align: center;
 }
+
+.mode {
+    appearance: none;
+    width: 15px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: var(--mode-color);
+    cursor: pointer;
+}
