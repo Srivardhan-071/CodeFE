@@ -1,19 +1,26 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Editor from './Editor'
 
 export default function IDE() {
     const [html, sethtml] = useState("")
     const [css, setcss] = useState("")
     const [JS, setJS] = useState("")
+    const [srcDoc, setSrcDoc] = useState()
 
-    const defualtJS = "document.body.style.background = 'white'"
+    const defualtJS = "document.body.style.background = '#FDF4F5'"
 
-    const srcDoc = `
-    <html>${html}</html>
-    <style>${css}</style>
-    <script>${defualtJS}</script>
-    <script>${JS}</script>
-    `
+    useEffect(() => {
+        const timeout = setTimeout(() => {
+            setSrcDoc(`
+            <html>${html}</html>
+            <style>${css}</style>
+            <script>${defualtJS}</script>
+            <script>${JS}</script>
+            `)
+        }, 500)
+
+        return () => clearTimeout(timeout)
+    }, [html, css, JS])
 
     function onChangeHtml(newValue) {
         sethtml(newValue)
