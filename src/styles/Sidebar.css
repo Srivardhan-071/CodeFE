@@ -2,7 +2,7 @@
     height: calc(100vh - 58px);
     padding: 20px 10px;
     list-style: none;
-    background-color: var(--bg-color-100);
+    background-color: var(--sidebar-color-100);
 
     position: sticky;
     top: 57px;

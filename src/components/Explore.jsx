@@ -1,57 +1,35 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
-import image from '../images/best.png'
 import '../styles/Explore.css'
+import ChallangesContext from '../context/ChallangesContext'
 
 export default function Explore() {
 
+    const { challanges } = useContext(ChallangesContext)
+    const { setChallangeImage } = useContext(ChallangesContext)
+
     return (
         <div className='explore'>
-            <Link to="/explore/editor">
-                <div className="challange-container">
-                    <img className='challange-image' src={image} alt="challange" />
-                </div>
-            </Link>
-            <Link to="/explore/editor">
-                <div className="challange-container">
-                    <img className='challange-image' src={image} alt="challange" />
-                </div>
-            </Link>
-            <Link to="/explore/editor">
-                <div className="challange-container">
-                    <img className='challange-image' src={image} alt="challange" />
-                </div>
-            </Link>
-            <Link to="/explore/editor">
-                <div className="challange-container">
-                    <img className='challange-image' src={image} alt="challange" />
-                </div>
-            </Link>
-            <Link to="/explore/editor">
-                <div className="challange-container">
-                    <img className='challange-image' src={image} alt="challange" />
-                </div>
-            </Link>
-            <Link to="/explore/editor">
-                <div className="challange-container">
-                    <img className='challange-image' src={image} alt="challange" />
-                </div>
-            </Link>
-            <Link to="/explore/editor">
-                <div className="challange-container">
-                    <img className='challange-image' src={image} alt="challange" />
-                </div>
-            </Link>
-            <Link to="/explore/editor">
-                <div className="challange-container">
-                    <img className='challange-image' src={image} alt="challange" />
-                </div>
-            </Link>
-            <Link to="/explore/editor">
-                <div className="challange-container">
-                    <img className='challange-image' src={image} alt="challange" />
-                </div>
-            </Link>
-        </div>
+            {
+                challanges.map((c) => {
+                    return (
+                        <>
+                            <h3 className='level'>{c.level}</h3>
+                            <div className='imaCont'>
+                                {c.images.map((i) => {
+                                    return (
+                                        < Link to="/explore/editor" key={i} >
+                                            <div className="challange-container">
+                                                <img className='challange-image' src={i} alt="challange" onClick={() => { setChallangeImage(i) }} />
+                                            </div>
+                                        </Link>
+                                    )
+                                })}
+                            </div>
+                        </>
+                    )
+                })
+            }
+        </div >
     )
 }

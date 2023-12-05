@@ -1,28 +1,32 @@
-import React, { useState } from 'react'
-import Editor from './Editor'
-import '../styles/ChallangeEditor.css'
-import image from "../images/best.png"
+import React, { useContext, useState } from 'react';
+import Editor from './Editor';
+import '../styles/ChallangeEditor.css';
+import ChallangesContext from '../context/ChallangesContext';
 
 export default function ChallangeEditor() {
 
-    const [code, setCode] = useState("")
+    const { challangeImage } = useContext(ChallangesContext)
 
-    const defualtJS = "document.body.style.background = 'white'"
+    const [code, setCode] = useState('');
+
+    const defaultJS = "document.body.style.background = 'white';";
 
     const srcDoc = `
         <html>${code}</html>
-        <script>${defualtJS}</script>
-    `
+        <script>${defaultJS}</script>
+    `;
 
     function onChangeCode(newValue) {
-        setCode(newValue)
+        setCode(newValue);
     }
+
     return (
         <div className='ChallangeEditor'>
             <div>
-                <Editor language="html" onChange={onChangeCode} displayName="Code Here" width="600px" height="95%" codes={true} />
+                <Editor language="html" onChange={onChangeCode} displayName="Code Here" width="700px" height="95%" codes={true} />
             </div>
             <div className="images">
+                <img src={challangeImage} alt="challenge" className='compare-image' />
                 <iframe
                     className='challange'
                     title='challange'
@@ -31,8 +35,8 @@ export default function ChallangeEditor() {
                     height="300px"
                     frameBorder="0"
                 />
-                <img src={image} alt="challange" />
+                <img src={challangeImage} alt="challenge" />
             </div>
         </div>
-    )
+    );
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/Body.css'
-import bestChallange from '../images/best.png'
+import mainImage from '../images/CSSimage.png'
 import { Link } from 'react-router-dom'
 
 export default function Body() {
@@ -19,8 +19,7 @@ export default function Body() {
                     </Link>
                 </div>
                 <div className="best">
-                    <img src={bestChallange} alt="bestChallange" className='best-challange' />
-                    <p className="sub-text">It represents our most formidable challenge.</p>
+                    <img src={mainImage} alt="bestChallange" className='mainImage' />
                 </div>
             </div>
         </div>

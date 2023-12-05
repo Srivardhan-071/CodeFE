@@ -1,7 +1,4 @@
 .explore {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px 0;
     padding: 10px;
     background-color: var(--bg-color-200);
 }
@@ -17,4 +14,14 @@
     border-radius: 5px;
     width: 350px;
     height: 250px;
+}
+
+.level {
+    padding: 10px 0;
+}
+
+.imaCont {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 0;
 }

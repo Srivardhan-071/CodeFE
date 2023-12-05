@@ -11,6 +11,7 @@ function App() {
   return (
     <>
       <Navbar />
+
       <div className="main">
         <Sidebar />
         <Routes>
@@ -20,6 +21,7 @@ function App() {
           <Route path='//explore/editor' element={<ChallangeEditor />} />
         </Routes>
       </div>
+
     </>
   );
 }
