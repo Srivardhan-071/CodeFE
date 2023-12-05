@@ -46,7 +46,7 @@ h1 {
     width: 350px;
     height: 250px;
     border-radius: 5px;
-    transition: filter .5s ease-in-out;
+    transition: filter .2s ease-in-out;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }
