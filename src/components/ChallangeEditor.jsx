@@ -11,13 +11,11 @@ export default function ChallangeEditor() {
 
     const [code, setCode] = useState('');
 
-    const defaultJS = "document.body.style.background = '#FDF4F5';";
 
     useEffect(() => {
         const timeout = setTimeout(() => {
             setSrcDoc(`
                 <html>${code}</html>
-                <script>${defaultJS}</script>
             `)
         }, 500)
 
@@ -36,6 +34,7 @@ export default function ChallangeEditor() {
             <div className="images">
                 <img src={challangeImage} alt="challenge" className='compare-image' />
                 <iframe
+                    style={{ backgroundColor: "white" }}
                     className='challange'
                     title='challange'
                     srcDoc={srcDoc}

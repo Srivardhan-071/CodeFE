@@ -21,6 +21,7 @@
   --mode-color: #eff5fb;
   --text-color: #17181a;
   --border-color: #333c47;
+  --mode: 1;
 }
 
 
@@ -29,11 +30,12 @@
   --font-color-200: #eff5fb;
   --bg-color-100: #ececec;
   --bg-color-200: #DBE2EF;
-  --bg-color-300: #112D4E;
+  --bg-color-300: #2A86FF;
   --h1-color: #112D4E;
   --mode-color: #17181a;
   --text-color: #17181a;
   --sidebar-color-100: #F9F7F7;
+  --mode: 0;
 }
 
 ::-webkit-scrollbar {
