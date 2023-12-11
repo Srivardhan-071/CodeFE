@@ -18,11 +18,11 @@ export default function Explore() {
                             <div className='imaCont'>
                                 {c.images.map((i) => {
                                     return (
-                                        < Link to="/explore/editor" key={i} >
-                                            <div className="challange-container">
+                                        <div className="challange-container">
+                                            < Link to="/explore/editor" key={i} >
                                                 <img className='challange-image' src={i} alt="challange" onClick={() => { setChallangeImage(i) }} />
-                                            </div>
-                                        </Link>
+                                            </Link>
+                                        </div>
                                     )
                                 })}
                             </div>
