@@ -4,16 +4,24 @@
 }
 
 .challange-container {
-    padding: 10px;
-    border: 2px solid var(--border-color);
+    margin: 1em;
+    outline: 2px solid var(--border-color);
     width: fit-content;
+    outline-offset: .5em;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .challange-image {
     border-radius: 5px;
     width: 350px;
     height: 250px;
+    scale: 1;
+    transition: transform 300ms ease;
+}
+
+.challange-image:hover {
+    transform: scale(1.1);
 }
 
 .level {
