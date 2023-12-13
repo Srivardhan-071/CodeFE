@@ -20,6 +20,7 @@
   --mode-color: #eff5fb;
   --text-color: #17181a;
   --border-color: #333c47;
+  --mouse: 10px;
 }
 
 
@@ -62,4 +63,16 @@
   font-size: 12px !important;
   font-weight: 400 !important;
   letter-spacing: 0 !important;
+}
+
+.mouse {
+  height: var(--mouse);
+  width: var(--mouse);
+  background-color: var(--logo-color);
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  z-index: 9999;
+  border-radius: 50%;
+  pointer-events: none;
 }
