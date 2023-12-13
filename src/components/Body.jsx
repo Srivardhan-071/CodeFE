@@ -15,7 +15,7 @@ export default function Body() {
                     <p className="intro">Step into a world where CSS learning is fun and engaging. CodeFE offers an immersive experience filled with exciting challenges and a playground to hone your front-end skills.</p>
                     <p className="intro">Begin your journey toward CSS mastery today. Join our vibrant community!</p>
                     <Link to="explore">
-                        <button className="btn-call">Start Coding</button>
+                        <button className='btn-call'>Start Coding</button>
                     </Link>
                 </div>
                 <div className="best">

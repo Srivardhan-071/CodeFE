@@ -20,7 +20,6 @@
   --mode-color: #eff5fb;
   --text-color: #17181a;
   --border-color: #333c47;
-  --mouse: 10px;
 }
 
 
@@ -34,7 +33,7 @@
   --h1-color: #112D4E;
   --mode-color: #17181a;
   --text-color: #17181a;
-  --sidebar-color-100: #F9F7F7;
+  --sidebar-color-100: #e2e4ff;
 }
 
 ::-webkit-scrollbar {

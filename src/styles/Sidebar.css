@@ -3,9 +3,9 @@
     padding: 20px 10px;
     list-style: none;
     background-color: var(--sidebar-color-100);
-
     position: sticky;
     top: 57px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 10px;
 }
 
 li {
