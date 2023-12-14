@@ -5,7 +5,7 @@
     background-color: var(--sidebar-color-100);
     position: sticky;
     top: 57px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 10px;
+    box-shadow: rgba(50, 49, 49, 0.2) 0px 8px 10px;
 }
 
 li {
