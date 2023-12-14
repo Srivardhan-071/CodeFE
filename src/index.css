@@ -58,7 +58,7 @@
 .ace_editor,
 .ace_editor * {
   color: var(--font-color-200);
-  font-family: "Monaco", "Menlo", "Ubuntu Mono", "Droid Sans Mono", "Consolas", monospace !important;
+  font-family: monospace !important;
   font-size: 12px !important;
   font-weight: 400 !important;
   letter-spacing: 0 !important;
